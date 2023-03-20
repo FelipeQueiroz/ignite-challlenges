@@ -1,0 +1,19 @@
+header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #0D0D0D;
+    height: 192px;
+    padding-bottom: 8px;
+}
+
+header h1 {
+    margin-left: 12px;
+    font-size: 40px;
+    font-weight: 900;
+    color: #4EA8DE;
+}
+header h1 span {
+    color: #5E60CE;
+}

@@ -1,0 +1,20 @@
+.Box {
+    height: 244px;
+    align-items: center;
+    padding: 64px 0;
+    margin: 0 auto;
+    text-align: center;
+
+    border-top: 1px solid #333333;
+    border-radius: 8px;
+}
+
+.Box p {
+    color: #808080;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.Box p ~ p {
+    font-weight: 400;
+}

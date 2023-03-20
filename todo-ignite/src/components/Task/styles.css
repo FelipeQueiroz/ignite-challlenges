@@ -1,0 +1,32 @@
+.Task {
+    display: flex;
+    justify-content: space-between;
+    background: #262626;
+    border: 1px solid #333333;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    flex-direction: row;
+    padding: 16px;
+    margin: 12px 0;
+    cursor: pointer;
+}
+
+.finished {
+    color: #808080;
+    text-decoration: line-through;
+}
+
+.Task div {
+    display: flex;
+    width: 90%;
+}
+
+.Task div p {
+    margin-left: 12px;
+}
+
+.IconButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
