@@ -10,7 +10,7 @@ function Checkbox(props: IProps) {
     return (
         <label className="container" >{props.label}
             <input type="checkbox" checked={props.checked} onClick={props.onClick} />
-            <span className="checkmark" onClick={props.onClick}></span>
+            <span className="checkmark" ></span>
         </label>
     )
 }
