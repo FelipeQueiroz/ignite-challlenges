@@ -10,10 +10,12 @@ export const GlobalStyle = createGlobalStyle`
     body {
       background-color: ${(props) => props.theme.background};
     }
-    body, input, textarea, button {
+    body, textarea, button {
       font-family: 'Roboto', sans-serif;
       font-weight: 400;
       font-size: 1rem;
+
+      padding: 0 10rem;
     }
     h1 {
       font-size: 3rem;

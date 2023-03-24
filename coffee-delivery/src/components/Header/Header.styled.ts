@@ -5,12 +5,13 @@ export const HeaderContainer = styled.div`
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 2rem 10rem;
+  padding: 2rem 0;
   margin-bottom: 5.8rem;
 
   .logo {
     width: 85px;
     height: 40px;
+    cursor: pointer;
   }
 `
 
