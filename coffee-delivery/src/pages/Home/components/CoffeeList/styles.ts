@@ -9,23 +9,25 @@ export const SectionTitle = styled.h2`
 `
 
 export const CoffeeContainerList = styled.ul`
-  list-style: none;
-  columns: 4 auto;
-  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
 `
 
 export const CoffeeContainerItem = styled.li`
+  width: 16rem;
+  text-align: center;
   display: inline-grid;
   justify-content: center;
   position: relative;
   align-items: center;
-  text-align: center;
-  margin: 2.5rem 0;
   padding: 0 1.25rem;
+  float: left;
+  margin: 2rem 2rem;
 
   background-color: ${(props) => props.theme['base-card']};
 
-  width: 16rem;
   height: 19.375rem;
 
   border-radius: 0.375rem 2.25rem;
@@ -67,6 +69,23 @@ export const Actions = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
 `
 
-export const Amount = styled.span``
+export const Amount = styled.label`
+  font-family: 'Baloo 2', cursive;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: ${(props) => props.theme['base-text']};
+
+  span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+  }
+`

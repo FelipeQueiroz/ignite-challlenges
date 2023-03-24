@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const CounterContainer = styled.div`
-  padding: 0.5rem 0.8rem;
+  padding: 0.35rem 0.8rem;
   background-color: ${(props) => props.theme['base-button']};
   border-radius: 0.375rem;
   display: flex;

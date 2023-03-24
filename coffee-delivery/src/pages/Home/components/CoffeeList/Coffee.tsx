@@ -11,6 +11,8 @@ import {
   Tag,
   TagsContainer,
 } from './styles'
+import { Button } from '../../../../components/Button/Button'
+import { ShoppingCart } from '@phosphor-icons/react'
 
 interface ICoffee {
   coffee: CoffeProps
@@ -19,6 +21,13 @@ interface ICoffee {
 export function Coffee({ coffee }: ICoffee) {
   const { img, tags, name, description, value } = coffee
   const [counter, setCounter] = useState(0)
+
+  const formattedValue = new Intl.NumberFormat('pt-BR', {
+    style: 'currency',
+    currency: 'BRL',
+  }).format(value)
+
+  const [currency, amount] = formattedValue.split(/\s/)
 
   const onQuantityChange = (newQuantity: number) => {
     setCounter(newQuantity)
@@ -35,8 +44,15 @@ export function Coffee({ coffee }: ICoffee) {
       <CoffeeTitle>{name}</CoffeeTitle>
       <CoffeeDescription>{description}</CoffeeDescription>
       <Actions>
-        <Amount>{value}</Amount>
-        <Counter quantity={counter} onQuantityChange={onQuantityChange} />
+        <Amount>
+          <span>{currency}</span> {amount}
+        </Amount>
+        <div>
+          <Counter quantity={counter} onQuantityChange={onQuantityChange} />
+          <Button variant={'icon-primary'}>
+            <ShoppingCart weight={'fill'} size={20} />
+          </Button>
+        </div>
       </Actions>
     </CoffeeContainerItem>
   )
