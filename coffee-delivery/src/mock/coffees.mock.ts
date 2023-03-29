@@ -15,7 +15,16 @@ import {
   Mochaccino,
 } from '../assets/coffees'
 
-export const coffees = [
+export interface ICoffee {
+  id: number
+  img: string
+  name: string
+  description: string
+  value: number
+  tags: Array<string>
+}
+
+export const coffees: ICoffee[] = [
   {
     id: 1,
     img: Expresso,

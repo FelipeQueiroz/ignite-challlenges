@@ -9,7 +9,10 @@ export const SectionTitle = styled.h2`
 `
 
 export const CoffeeContainerList = styled.ul`
-  display: flex;
+  display: grid;
+  grid-template-columns: 24% 24% 24% 24%;
+  grid-gap: 4rem 2rem;
+
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
@@ -24,7 +27,6 @@ export const CoffeeContainerItem = styled.li`
   align-items: center;
   padding: 0 1.25rem;
   float: left;
-  margin: 2rem 2rem;
 
   background-color: ${(props) => props.theme['base-card']};
 

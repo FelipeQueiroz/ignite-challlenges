@@ -6,7 +6,7 @@ export const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 2rem 0;
-  margin-bottom: 5.8rem;
+  margin-bottom: 3rem;
 
   .logo {
     width: 85px;
